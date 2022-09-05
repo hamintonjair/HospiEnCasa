@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QwdH/4yd8+fYImEExnqUpSc6V37kd71rVsIUgAN6qf4Qn6B8snvYNdMr+2VISOwimTOZgNtn8N1i3cb+NIo/tA==",
+  "success": true,
+  "projectFilePath": "E:\\Mision_tic\\ciclo_3\\Proyecto\\PrinterMaintenance\\HospiEnCasa\\HospiEnCasa.Dominio\\HospiEnCasa.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mafia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\mafia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
