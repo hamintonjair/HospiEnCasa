@@ -17,8 +17,8 @@ namespace HospiEnCasa.Consola
         public static void Main(string[] args)
         {
              
-            // addNivelStudio();     
-            // FindAll(); 
+           // addNivelStudio();     
+             FindAll(); 
             // FindByName();
             //    Find();            
             // Update();
@@ -38,7 +38,7 @@ namespace HospiEnCasa.Consola
             Console.WriteLine("Registrando Nivel de estudio...");
 
            var nivelEstudio = new NivelEstudio{
-                estudio = "Primaria"
+                estudio = "Ingeniero"
       
             };
            try

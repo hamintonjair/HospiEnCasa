@@ -11,7 +11,6 @@ namespace HospiEnCasa.Dominio
         public string tipo_repuesto { get; set; }
         public decimal valor { get; set; }
         public DateTime fecha_compra { get; set; }
-        public int repuestoId { get; set; }
-    
+       
     }
 }

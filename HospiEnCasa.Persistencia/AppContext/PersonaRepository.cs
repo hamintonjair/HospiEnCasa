@@ -17,73 +17,70 @@ namespace HospiEnCasa.Persistencia
       }   
    
       //Guardar
-        int IPersonaRepository.AdicionarPersona(Persona persona){
-           _context.Impresoras.Add(persona);
-           return _context.SaveChanges();
-       }       
-        //buscar por id
-        bool IPersonaRepository.Add(Persona persona){
-            _context.Impresoras.Add(persona);
-            return (_context.SaveChanges() > 0 ? true : false);            
-        }
-        //Añadir
-        Persona IPersonaRepository.Buscar(int id){
-            return _context.Impresoras.Find(id);
-        }
-        //enumerar
-        IEnumerable<Persona> IPersonaRepository.GetAll(){
-            return _context.Impresoras;
-        }
-        //listar
-        List<Persona> IPersonaRepository.ObtenerTodo(){
-            return _context.Impresoras.ToList();
-        }
-        //buscar por nombre
-        IEnumerable<Persona> IPersonaRepository.FindByName(string name){
-            return _context.Impresoras.Where(p => p.nombre.Contains(name) );
-        }
+    //     int IPersonaRepository.AdicionarPersona(Persona persona){
+    //        _context.Personas.Add(persona);
+    //        return _context.SaveChanges();
+    //    }       
+    //     //buscar por id
+    //     bool IPersonaRepository.Add(Persona persona){
+    //         _context.Personas.Add(persona);
+    //         return (_context.SaveChanges() > 0 ? true : false);            
+    //     }
+    //     //Añadir
+    //     Persona IPersonaRepository.Buscar(int id){
+    //         return _context.Personas.Find(id);
+    //     }
+    //     //enumerar
+    //     IEnumerable<Persona> IPersonaRepository.GetAll(){
+    //         return _context.Personas;
+    //     }
+    //     //listar
+    //     List<Persona> IPersonaRepository.ObtenerTodo(){
+    //         return _context.Personas.ToList();
+    //     }
+    //     //buscar por nombre
+    //     IEnumerable<Persona> IPersonaRepository.FindByName(string name){
+    //         return _context.Personas.Where(p => p.nombre.Contains(name) );
+    //     }
 
-        IEnumerable<Persona> IPersonaRepository.FindMultipleParameter(string value){
-            return _context.Impresoras.Where(p => p.nombre.Contains(value) ||
-              p.apellidos.Contains(value) || p.cedula.Contains(value) || p.telefono.Contains(value)
-              || p.fecha_nacimiento.Contains(value) ||  p.password.Contains(value) ||  p.volumen_imp.Contains(value)||
-              p.direccion.Contains(value) || p.nivelEstudioId.Contains(value));
-        }
-        //actualizar
-        int IPersonaRepository.Update(Persona persona){
-            _context.Impresoras.Update(persona);
-            return _context.SaveChanges();
-        }
-        //eliminar
-        int IPersonaRepository.Delete(Persona persona){
-            _context.Impresoras.Remove(persona);
-            return _context.SaveChanges();
-        }
+    //     IEnumerable<Persona> IPersonaRepository.FindMultipleParameter(string value){
+    //         return _context.Personas.Where(p => p.nombre.Contains(value) ||
+    //           p.apellidos.Contains(value) || p.cedula.Contains(value));
+    //     }
+    //     //actualizar
+    //     int IPersonaRepository.Update(Persona persona){
+    //         _context.Personas.Update(persona);
+    //         return _context.SaveChanges();
+    //     }
+    //     //eliminar
+    //     int IPersonaRepository.Delete(Persona persona){
+    //         _context.Personas.Remove(persona);
+    //         return _context.SaveChanges();
+    //     }
 
-        IEnumerable<Persona> IPersonaRepository.ObtenerTodosPersona(){
-            return _context.Impresoras;
-        }
+    //     IEnumerable<Persona> IPersonaRepository.ObtenerTodosPersona(){
+    //         return _context.Personas;
+    //     }
 
-        List<Persona> IPersonaRepository.ObtenerPersonaPorNombre(string nombre){
-            return _context.Impresoras.Where( p => p.nombre.Contains(nombre) ).ToList();
-        }
+    //     List<Persona> IPersonaRepository.ObtenerPersonaPorNombre(string nombre){
+    //         return _context.Personas.Where( p => p.nombre.Contains(nombre) ).ToList();
+    //     }
 
-        IEnumerable<Persona> IPersonaRepository.Buscador(string busqueda){
-                    return _context.Impresoras.Where(p => p.nombre.Contains(value) ||
-              p.apellidos.Contains(value) || p.cedula.Contains(value) || p.telefono.Contains(value)
-              || p.fecha_nacimiento.Contains(value) ||  p.password.Contains(value) ||  p.volumen_imp.Contains(value)||
-              p.direccion.Contains(value) || p.nivelEstudioId.Contains(value));
-        }
+    //     IEnumerable<Persona> IPersonaRepository.Buscador(string busqueda){
+    //          return _context.Personas.Where(p => p.nombre.Contains(busqueda) ||
+    //           p.apellidos.Contains(busqueda) || p.cedula.Contains(busqueda) || p.telefono.Contains(busqueda)
+    //           ||  p.direccion.Contains(busqueda));
+    //     }
 
-        int IPersonaRepository.ActualizarPersona(Persona persona){
-            _context.Impresoras.Update(persona);
-            return _context.SaveChanges();
-        }
+    //     int IPersonaRepository.ActualizarPersona(Persona persona){
+    //         _context.Personas.Update(persona);
+    //         return _context.SaveChanges();
+    //     }
 
-        int IPersonaRepository.EliminarPersona(Persona persona){
-            _context.Impresoras.Remove(persona);
-            return _context.SaveChanges();
-        }
+    //     int IPersonaRepository.EliminarPersona(Persona persona){
+    //         _context.Personas.Remove(persona);
+    //         return _context.SaveChanges();
+    //     }
   }
    
 }

@@ -12,7 +12,6 @@ namespace HospiEnCasa.Dominio
        public decimal valor { get; set; }
        public string detalles { get; set; }
        public DateTime fecha_revision { get; set; }   
-       public int impresoraId { get; set; }
         //agregación     
         public Persona persona { get; set; }
         public CompraRepuesto compra { get; set; }

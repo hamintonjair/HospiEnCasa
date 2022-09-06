@@ -9,6 +9,7 @@ namespace HospiEnCasa.Dominio
     {
        public int id { get; set; }
        public string tipo_seguro { get; set; }
+       public Decimal precio { get; set; }
        public DateTime fecha_activacion { get; set; }
        public DateTime fecha_vencimiento { get; set; } 
     }

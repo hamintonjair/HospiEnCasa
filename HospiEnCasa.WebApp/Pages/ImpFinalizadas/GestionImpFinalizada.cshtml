@@ -1,11 +1,68 @@
 @page
 @model HospiEnCasa.WebApp.Pages.ImpFinalizadas.GestionImpFinalizada
 @{
-    ViewData["Title"] = "GestionImpFinalizada";
+    ViewData["Title"] = "Revisión de impresoras finalizada";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<div>
-    
+
+<div class="row m-4" style="padding-top: 10px;">
+    <div class="col-sm-12">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#FormModal">Revisiones Finalizadas
+        </button>
+    </div>
+  
+</div>
+
+<div class="container">
+    <div margin:0 class="col-sm-12">
+        <table id="customerDatatable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombres</th>
+                    <th>Impresora</th>
+                    <th>Detalles</th>
+                    <th>Valor</th>
+                    <th>Fecha de revision</th>
+                    <th>detalles</th>
+                    <th>compra</th>
+                    <th>estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Haminton</td>
+                    <td>Mena Mena</td>
+                    <td>10774586256</td>
+                    <td>Ingeniero de sistemas</td>
+                    <td>3147596354</td>
+                    <td>cra 12 # 46-136</td>
+                    <td>mafia00796@hotmail.com</td>
+                    <td>Jefe</td>
+                    <td>
+                        <a asp-controller="Registro" asp-action="Edit" asp-route-id="1"   class="btn btn-info">Finalizado</a>
+                    </td>                  
+     
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Haminton</td>
+                    <td>Mena Mena</td>
+                    <td>10774586256</td>
+                    <td>Ingeniero de sistemas</td>
+                    <td>3147596354</td>
+                    <td>cra 12 # 46-136</td>
+                    <td>mafia00796@hotmail.com</td>
+                    <td>Jefe</td>
+                    <td>
+                        <a asp-controller="Registro" asp-action="Edit" asp-route-id="1"   class="btn btn-info">Finalizado</a>
+                    </td>
+                   
+                </tr>               
+            </tbody>
+        </table>
+    </div>
 </div>

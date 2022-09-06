@@ -16,69 +16,67 @@ namespace HospiEnCasa.Persistencia
           _context = context;
         }     
        //Guardar
-        int IRolesRepository.AdicionarRol(Rol rol){
-           _context.Roles.Add(rol);
-           return _context.SaveChanges();
-       }       
-        //buscar por id
-        bool IRolesRepository.Add(Rol rol){
-            _context.Roles.Add(rol);
-            return (_context.SaveChanges() > 0 ? true : false);            
-        }
-        //Añadir
-        Rol IRolesRepository.Buscar(int id){
-            return _context.Roles.Find(id);
-        }
-        //enumerar
-        IEnumerable<Rol> IRolesRepository.GetAll(){
-            return _context.Roles;
-        }
-        //listar
-        List<Rol> IRolesRepository.ObtenerTodo(){
-            return _context.Roles.ToList();
-        }
-        //buscar por nombre
-        IEnumerable<Rol> IRolesRepository.FindByName(string name){
-            return _context.Roles.Where(p => p.nombre.Contains(name) );
-        }
+    //     int IRolesRepository.AdicionarRol(Rol rol){
+    //        _context.Roles.Add(rol);
+    //        return _context.SaveChanges();
+    //    }       
+    //     //buscar por id
+    //     bool IRolesRepository.Add(Rol rol){
+    //         _context.Roles.Add(rol);
+    //         return (_context.SaveChanges() > 0 ? true : false);            
+    //     }
+    //     //Añadir
+    //     Rol IRolesRepository.Buscar(int id){
+    //         return _context.Roles.Find(id);
+    //     }
+    //     //enumerar
+    //     IEnumerable<Rol> IRolesRepository.GetAll(){
+    //         return _context.Roles;
+    //     }
+    //     //listar
+    //     List<Rol> IRolesRepository.ObtenerTodo(){
+    //         return _context.Roles.ToList();
+    //     }
+    //     //buscar por nombre
+    //     IEnumerable<Rol> IRolesRepository.FindByName(string name){
+    //         return _context.Roles.Where(p => p.tipo_Rol.Contains(name) );
+    //     }
 
-        IEnumerable<Rol> IRolesRepository.FindMultipleParameter(string value){
-            return _context.Roles.Where(p => p.nombre.Contains(value) ||
-              p.personaId.Contains(value));
-        }
-        //actualizar
-        int IRolesRepository.Update(Rol rol){
-            _context.Roles.Update(rol);
-            return _context.SaveChanges();
-        }
-        //eliminar
-        int IRolesRepository.Delete(Rol rol){
-            _context.Roles.Remove(rol);
-            return _context.SaveChanges();
-        }
+    //     IEnumerable<Rol> IRolesRepository.FindMultipleParameter(string value){
+    //         return _context.Roles.Where(p => p.tipo_Rol.Contains(value));
+    //     }
+    //     //actualizar
+    //     int IRolesRepository.Update(Rol rol){
+    //         _context.Roles.Update(rol);
+    //         return _context.SaveChanges();
+    //     }
+    //     //eliminar
+    //     int IRolesRepository.Delete(Rol rol){
+    //         _context.Roles.Remove(rol);
+    //         return _context.SaveChanges();
+    //     }
 
-        IEnumerable<Rol> IRolesRepository.ObtenerTodosRol(){
-            return _context.Roles;
-        }
+    //     IEnumerable<Rol> IRolesRepository.ObtenerTodosRol(){
+    //         return _context.Roles;
+    //     }
 
-        List<Rol> IRolesRepository.ObtenerRolPorNombre(string nombre){
-            return _context.Roles.Where( p => p.nombre.Contains(nombre) ).ToList();
-        }
+    //     List<Rol> IRolesRepository.ObtenerRolPorNombre(string nombre){
+    //         return _context.Roles.Where( p => p.tipo_Rol.Contains(nombre) ).ToList();
+    //     }
 
-        IEnumerable<Rol> IRolesRepository.Buscador(string busqueda){
-            return _context.Roles.Where(p => p.nombre.Contains(value) ||
-              p.personaId.Contains(value));
-        }
+    //     IEnumerable<Rol> IRolesRepository.Buscador(string busqueda){
+    //         return _context.Roles.Where(p => p.tipo_Rol.Contains(busqueda));
+    //     }
 
-        int IRolesRepository.ActualizarRol(Rol rol){
-            _context.Roles.Update(rol);
-            return _context.SaveChanges();
-        }
+    //     int IRolesRepository.ActualizarRol(Rol rol){
+    //         _context.Roles.Update(rol);
+    //         return _context.SaveChanges();
+    //     }
 
-        int IRolesRepository.EliminarRol(Rol rol){
-            _context.Roles.Remove(rol);
-            return _context.SaveChanges();
-        }
+    //     int IRolesRepository.EliminarRol(Rol rol){
+    //         _context.Roles.Remove(rol);
+    //         return _context.SaveChanges();
+    //     }
     }
    
 }

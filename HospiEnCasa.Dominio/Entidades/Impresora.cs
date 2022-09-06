@@ -10,8 +10,7 @@ namespace HospiEnCasa.Dominio
        public int id { get; set; }
        public string nombre { get; set; }
        public string marca { get; set; }
-       public string placa { get; set; }
-       public int TipoImpresoraId { get; set; }
+       public string placa { get; set; }       
        public DateTime ano_modelo { get; set; }
        public string velocidad_imp { get; set; }
        public string volumen_imp { get; set; }

@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace HospiEnCasa.Dominio
 {
-    public class Rol : Persona
+    public class Rol
     {
-       public int id { get; set; }
-       public string nombre { get; set; }
-       public int personaId { get; set; }
+       public int id { get; set; }  
+       public string tipo_Rol { get; set; }   
+       public string password { get; set; }
+       public Persona persona { get; set; }  
+
     }
 }
