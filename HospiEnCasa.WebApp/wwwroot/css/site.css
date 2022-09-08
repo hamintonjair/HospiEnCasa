@@ -69,3 +69,42 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+/*contenedor principal*/
+
+/* .container{
+  background-color: #3333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+} */
+
+/* #principal{
+  width: 900px;
+  height: 400px;
+  margin-top:50px ;
+  display: flex;
+} */
+#form{
+
+  width: 600px;
+  height: 600;
+  box-shadow: -5px 0 10px #fcfbfb;
+  align-items: center;
+  justify-content: center;
+  text-align: justify
+  
+}
+img{
+
+ width:350px ;
+ height: 400px;
+display: flex;
+}
+.parrafo{
+  background-color: bisque;
+  text-align: justify;
+}
+#ontainer{
+  background-color: rgb(245, 242, 238);
+}
