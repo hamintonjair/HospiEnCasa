@@ -9,7 +9,7 @@ namespace HospiEnCasa.Persistencia
     {
         // int AdicionarLogin(Login login);
         // bool Add(Login login);
-        // Login Buscar(int id);
+        Login Buscar(int id);
         // IEnumerable<Login> GetAll();
         // List<Login> ObtenerTodo();
         // IEnumerable<Login> FindByName(string name);

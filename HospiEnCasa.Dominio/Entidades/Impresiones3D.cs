@@ -5,13 +5,15 @@ using System.Threading.Tasks;
 
 namespace HospiEnCasa.Dominio
 {
-    public class Impresiones3D : Impresora
+    public class Impresiones3D
     {
        public int id { get; set; }
        public string cliente { get; set; }
        public string Tipo_impresion { get; set; }
-       public int cantidad { get; set; }
-       public decimal precio { get; set; }      
+       public string cantidad { get; set; }
+       public string precio { get; set; }  
+           //agregación  
+       public Impresora impresora { get; set; }       
 
     }
 }

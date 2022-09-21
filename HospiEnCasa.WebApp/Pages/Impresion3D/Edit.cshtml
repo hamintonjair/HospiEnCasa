@@ -1,0 +1,96 @@
+@page
+@model HospiEnCasa.WebApp.Pages.Impresion3D.Edit
+@{
+    ViewData["Title"] = "Actualizar Registros de Impresiones 3D";
+    var Impresion3D = Model.impresiones;
+
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+@* editar *@
+<div id="container" class="container">
+    <div margin:0 class="col-sm-12">
+        <form method="post" action="" id="Editar">
+         <input type="hidden" value="@Impresion3D.id" id ="id" name="id">
+           
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Cliente</label>
+                    <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Editar Cliente"
+                        value="@Impresion3D.cliente">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Tipo de impresión</label>
+                    <input type="text" class="form-control" id="tipoImpresion" name="tipoImpresion"
+                        placeholder="Editar tipo de impresión" value="@Impresion3D.Tipo_impresion">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputAddress">Cantidad</label>
+                    <input type="text" class="form-control" id="cantidad" name="cantidad" placeholder="Editar cantidad"
+                        value="@Impresion3D.cantidad">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputAddress2">Precio</label>
+                    <input type="number" class="form-control" id="precio" name="precio" placeholder="Editar Precio"
+                        value="@Impresion3D.precio">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"> Actualizar</button>
+            <a type="reset" asp-page="./GestionImpresion3D" class="btn btn-info"> Cancelar</a>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="FormModalEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header " style="background-color:#2668AC ;">
+                <h5 class="modal-title" id="exampleModalLabel">Actualización</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                     @Html.AntiForgeryToken()
+                    <p class="text-primary">
+                        Los campos con asterisco (<font color="red">*</font>) son obligatorios.
+                    </p>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Cliente (<font color="red">*</font>)</label>
+                            <input type="text" id="cliente" name="cliente" class="form-control" placeholder="Cliente"
+                                required="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Tipo de impresón(<font color="red">*</font>)</label>
+                            <input type="text" id="impresion3d" name="impresion3d" class="form-control"
+                                placeholder="Tipo de impresón" required="">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Cantidad (<font color="red">*</font>)</label>
+                            <input type="text" id="cantidad" name="cantidad" class="form-control" placeholder="Cantidad"
+                                required="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Precio(<font color="red">*</font>)</label>
+                            <input type="text" id="precio" name="precio" class="form-control" placeholder="Precio"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-success" onclick="fnActualizar">Actualizar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

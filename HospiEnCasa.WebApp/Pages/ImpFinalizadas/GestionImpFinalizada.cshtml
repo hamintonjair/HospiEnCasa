@@ -6,53 +6,67 @@
 
 <h1>@ViewData["Title"]</h1>
 
-
-<div id="container" class="container">
-    <div margin:0 class="col-sm-12">
-        <table id="customerDatatable" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nombres</th>
-                    <th>Impresora</th>
-                    <th>Detalles</th>
-                    <th>Valor</th>
-                    <th>Fecha de revision</th>
-                    <th>detalles</th>
-                    <th>compra</th>
-                    <th>estado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Haminton</td>
-                    <td>Mena Mena</td>
-                    <td>10774586256</td>
-                    <td>Ingeniero de sistemas</td>
-                    <td>3147596354</td>
-                    <td>cra 12 # 46-136</td>
-                    <td>mafia00796@hotmail.com</td>                 
-                    <td>
-                        <a asp-controller="Registro" asp-action="Edit" asp-route-id="1"   class="btn btn-info">Finalizado</a>
-                    </td>                  
-     
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Haminton</td>
-                    <td>Mena Mena</td>
-                    <td>10774586256</td>
-                    <td>Ingeniero de sistemas</td>
-                    <td>3147596354</td>
-                    <td>cra 12 # 46-136</td>
-                    <td>mafia00796@hotmail.com</td>                 
-                    <td>
-                        <a asp-controller="Registro" asp-action="Edit" asp-route-id="1"   class="btn btn-info">Finalizado</a>
-                    </td>
-                   
-                </tr>               
-            </tbody>
-        </table>
+@if (TempData["mensaje"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["mensaje"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
-</div>
+}
+
+
+
+<div id="container" class="app-title">
+    <div class="row">
+        <div margin:0 class="col-12 table-responsive">
+            <table id="customerDatatable" class="table table-striped table-bordered nowrap" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombres</th>
+                        <th>Impresora</th>
+                        <th>Detalles</th>
+                        <th>Valor</th>
+                        <th>Fecha de revision</th>
+                        <th>detalles</th>
+                        <th>compra</th>
+                        <th>estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Haminton</td>
+                        <td>Mena Mena</td>
+                        <td>10774586256</td>
+                        <td>Ingeniero de sistemas</td>
+                        <td>3147596354</td>
+                        <td>cra 12 # 46-136</td>
+                        <td>mafia00796@hotmail.com</td>
+                        <td>
+                            <a asp-controller="Registro" asp-action="Edit" asp-route-id="1"
+                                class="btn btn-info">Finalizado</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Haminton</td>
+                        <td>Mena Mena</td>
+                        <td>10774586256</td>
+                        <td>Ingeniero de sistemas</td>
+                        <td>3147596354</td>
+                        <td>cra 12 # 46-136</td>
+                        <td>mafia00796@hotmail.com</td>
+                        <td>
+                            <a asp-controller="Registro" asp-action="Edit" asp-route-id="1"
+                                class="btn btn-info">Finalizado</a>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

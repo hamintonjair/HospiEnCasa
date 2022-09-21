@@ -108,3 +108,85 @@ display: flex;
 #ontainer{
   background-color: rgb(245, 242, 238);
 }
+body{
+  margin-bottom:60px ;
+  background-image: url(../images/fondo.jpg);
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  letter-spacing: 1px; 
+  margin: 10%;
+  padding-top: 5%;
+}
+
+tbody td {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+
+  background-color: rgb(208, 224, 224);
+}
+
+tfoot th {
+  text-align: right;
+}
+tbody, td, #estado{
+  margin: 10%;
+  padding-top: 5%;
+  
+}
+
+button{
+  width:  100px;
+  height: 40px;
+  margin: 2px;
+  background: #1b6ec2;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 30px;
+  color: aqua;
+  transition: .3s ease all;
+ 
+}
+
+h1{
+  text-align: center;
+  background-color:  rgb(208, 224, 224);
+  border: none; 
+  padding: 30px 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#nav{
+  width:  100px;
+  height: 40px;
+  margin: 1px;
+  background: #aecde7;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: aqua;
+  transition: .3s ease all;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container{  
+  column-width: auto;
+  /* background: #aecde7; */
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  transition: .3s ease all;
+  padding: 10px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+

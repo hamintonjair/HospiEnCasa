@@ -9,5 +9,6 @@ namespace HospiEnCasa.Dominio
     {
        public int id { get; set; }
        public string nombre_impresora { get; set; }  
+  
     }
 }

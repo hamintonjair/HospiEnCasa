@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,10 @@ namespace HospiEnCasa.Dominio
     {
        public int id { get; set; }
        public string tipo_seguro { get; set; }
-       public Decimal precio { get; set; }
-       public DateTime fecha_activacion { get; set; }
-       public DateTime fecha_vencimiento { get; set; } 
+       public string precio { get; set; }            
+       public string fecha_activacion { get; set; }
+       public string fecha_vencimiento { get; set; } 
+           //agregación  
+       public Impresora impresora { get; set; }
     }
 }

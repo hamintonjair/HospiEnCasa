@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace HospiEnCasa.Dominio
 {
-    public class Login : Rol
+    public class Login
     {
        public int id { get; set; }    
        public string password { get; set; }   
        public  Rol rol { get; set; } 
 
-    
     }
 }

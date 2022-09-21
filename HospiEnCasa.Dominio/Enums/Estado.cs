@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 namespace HospiEnCasa.Dominio
 {
     public enum Estado
-    {
-       Activo,
-       Inactivo
+    {      
+       Proceso,
+       Finalizado
     
     }
 }

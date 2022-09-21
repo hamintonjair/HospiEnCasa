@@ -4,54 +4,59 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Impresora</title>
+    <title>@ViewData["Title"] Home </title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-     <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" />
-     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/dataTables.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/css/all.min.css" />
+
+  
+   
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">
+                @* <a class="navbar-brand" asp-area="" asp-page="/Index">
                     <h4>Impresiones3D/mantenimientos</h4>
-                </a>
+                </a> *@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">                        
+                    <ul class="navbar-nav flex-grow-1"> 
+                         <li class="nav-item">
+                            <a  id="nav"class="nav-link text-dark" asp-area="" asp-page="/Index">Login</a>
+                        </li>                      
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Login/GestionLogin">Login</a>
+                            <a  id="nav"class="nav-link text-dark" asp-area="" asp-page="/Principal/Principal">Home</a>
                         </li>
+                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""
+                            <a id="nav" class="nav-link text-dark" asp-area=""
                                 asp-page="/Personas/GestionPersona">Usuarios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Repuestos/GestionRepuesto">Repuestos</a>
+                            <a  id="nav"class="nav-link text-dark" asp-area="" asp-page="/Repuestos/GestionRepuesto">Repuestos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Seguros/GestionSeguro">Seguros</a>
+                            <a id="nav" class="nav-link text-dark" asp-area="" asp-page="/Seguros/GestionSeguro">Seguros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""
+                            <a  id="nav"class="nav-link text-dark" asp-area=""
                                 asp-page="/Impresoras/GestionImpresora">Impresoras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""
+                            <a  id="nav" style="width: auto;" class="nav-link text-dark" asp-area=""
                                 asp-page="/Impresion3D/GestionImpresion3D">Impresiones3D</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Revision/GestionRevision">Revisión</a>
+                            <a id="nav" class="nav-link text-dark" asp-area="" asp-page="/Revisiones/GestionRevision">Revisión</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area=""
+                            <a id="nav" class="nav-link text-dark" asp-area=""
                                 asp-page="/ImpFinalizadas/GestionImpFinalizada">Finalizadas</a>
                         </li>
                     </ul>
@@ -118,9 +123,18 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/js/dataTables.min.js"></script>
+    <script src="~/js/personaCreate.js"></script>
 
+    @* <script src="~/js/site.js" asp-append-version="true"></script> *@
+     @* <script src="~/js/personaCreate.js" asp-append-version="true"></script> *@
+@* <!-- Para que se cargue el escript -->
+@{
+    if(ViewData["script"] != null){
+        <script src='~/js/@ViewData["script"]' asp-append-version="true"></script>
+    }
+} *@
     @RenderSection("Scripts", required: false)
 </body>
 

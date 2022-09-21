@@ -7270,11 +7270,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Mision_tic\\ciclo_3\\Proyecto\\PrinterMaintenance\\HospiEnCasa\\HospiEnCasa.Persistencia\\HospiEnCasa.Persistencia.csproj",
+      "projectUniqueName": "E:\\mision_tic\\ciclo_3\\proyecto\\printermaintenance\\hospiencasa\\HospiEnCasa.Persistencia\\HospiEnCasa.Persistencia.csproj",
       "projectName": "HospiEnCasa.Persistencia",
-      "projectPath": "E:\\Mision_tic\\ciclo_3\\Proyecto\\PrinterMaintenance\\HospiEnCasa\\HospiEnCasa.Persistencia\\HospiEnCasa.Persistencia.csproj",
+      "projectPath": "E:\\mision_tic\\ciclo_3\\proyecto\\printermaintenance\\hospiencasa\\HospiEnCasa.Persistencia\\HospiEnCasa.Persistencia.csproj",
       "packagesPath": "C:\\Users\\mafia\\.nuget\\packages\\",
-      "outputPath": "E:\\Mision_tic\\ciclo_3\\Proyecto\\PrinterMaintenance\\HospiEnCasa\\HospiEnCasa.Persistencia\\obj\\",
+      "outputPath": "E:\\mision_tic\\ciclo_3\\proyecto\\printermaintenance\\hospiencasa\\HospiEnCasa.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -7297,8 +7297,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "E:\\Mision_tic\\ciclo_3\\Proyecto\\PrinterMaintenance\\HospiEnCasa\\HospiEnCasa.Dominio\\HospiEnCasa.Dominio.csproj": {
-              "projectPath": "E:\\Mision_tic\\ciclo_3\\Proyecto\\PrinterMaintenance\\HospiEnCasa\\HospiEnCasa.Dominio\\HospiEnCasa.Dominio.csproj"
+            "E:\\mision_tic\\ciclo_3\\proyecto\\printermaintenance\\hospiencasa\\HospiEnCasa.Dominio\\HospiEnCasa.Dominio.csproj": {
+              "projectPath": "E:\\mision_tic\\ciclo_3\\proyecto\\printermaintenance\\hospiencasa\\HospiEnCasa.Dominio\\HospiEnCasa.Dominio.csproj"
             }
           }
         }

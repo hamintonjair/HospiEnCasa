@@ -18,8 +18,8 @@ namespace HospiEnCasa.Consola
         {
              
            // addNivelStudio();     
-             FindAll(); 
-            // FindByName();
+            //  FindAll(); 
+            FindByName();
             //    Find();            
             // Update();
             // Delete();                 
@@ -72,7 +72,7 @@ namespace HospiEnCasa.Consola
 
         public static void FindByName(){
 
-            var result = nivelEstudiosRepository.FindByName("Bachiller");
+            var result = nivelEstudiosRepository.FindByName("profesional");
 
             foreach (var Estudio in result)
             {

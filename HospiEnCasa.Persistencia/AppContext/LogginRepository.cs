@@ -15,7 +15,7 @@ namespace HospiEnCasa.Persistencia
         {
           _context = context;
         }      
-        //Guardar
+    //     //Guardar
     //     int ILogginRepository.AdicionarLogin(Login login){
     //        _context.Loggin.Add(login);
     //        return _context.SaveChanges();
@@ -25,10 +25,10 @@ namespace HospiEnCasa.Persistencia
     //         _context.Loggin.Add(login);
     //         return (_context.SaveChanges() > 0 ? true : false);            
     //     }
-    //     //Añadir
-    //     Login ILogginRepository.Buscar(int id){
-    //         return _context.Loggin.Find(id);
-    //     }
+    //     
+        Login ILogginRepository.Buscar(int id){
+            return _context.Loggin.Find(id);
+        }
     //     //enumerar
     //     IEnumerable<Login> ILogginRepository.GetAll(){
     //         return _context.Loggin;
@@ -60,23 +60,23 @@ namespace HospiEnCasa.Persistencia
     //         return _context.Loggin;
     //     }
 
-    //     List<Login> ILogginRepository.ObtenerLoginPorNombre(string nombre){
-    //         return _context.Loggin.Where( p => p.tipo_Rol.Contains(nombre)).ToList();
-    //     }
+        // List<Login> ILogginRepository.ObtenerLoginPorNombre(string nombre){
+        //     return _context.Loggin.Where( p => p.rol.Contains(nombre)).ToList();
+        // }
 
-    //     IEnumerable<Login> ILogginRepository.Buscador(string busqueda){
-    //        return _context.Loggin.Where(p => p.tipo_Rol.Contains(busqueda) );
-    //     }
+        // IEnumerable<Login> ILogginRepository.Buscador(string busqueda){
+        //    return _context.Loggin.Where(p => p.tipo_Rol.Contains(busqueda) );
+        // }
 
-    //     int ILogginRepository.ActualizarLogin(Login login){
-    //         _context.Loggin.Update(login);
-    //         return _context.SaveChanges();
-    //     }
+        // int ILogginRepository.ActualizarLogin(Login login){
+        //     _context.Loggin.Update(login);
+        //     return _context.SaveChanges();
+        // }
 
-    //     int ILogginRepository.EliminarLogin(Login login){
-    //         _context.Loggin.Remove(login);
-    //         return _context.SaveChanges();
-    //     }
+        // int ILogginRepository.EliminarLogin(Login login){
+        //     _context.Loggin.Remove(login);
+        //     return _context.SaveChanges();
+        // }
        
     }
    
